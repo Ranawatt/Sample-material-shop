@@ -1,4 +1,4 @@
-package com.example.sample_material_shop
+package com.example.sample_material_shop.shop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
