@@ -14,6 +14,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                argument("room.incremental", "true")
+            }
+        }
     }
 
     buildTypes {
@@ -22,9 +28,32 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets["main"].java.srcDir("src/main/kotlin")
     compileOptions {
         sourceCompatibility "1.8"
         targetCompatibility "1.8"
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerVersion = "1.4.0-rc"
+        kotlinCompilerExtensionVersion = "0.1.0-dev16"
+    }
+
+    packagingOptions {
+        exclude("META-INF/atomicfu.kotlin_module")
+    }
+
+    aaptOptions {
+        noCompress("filamat", "ktx", "glb")
     }
 }
 
@@ -42,6 +71,7 @@ dependencies {
 
     implementation "androidx.room:room-runtime:2.2.5"
     implementation "androidx.room:room-ktx:2.2.5"
+    implementation 'androidx.compose:compose-runtime:0.1.0-dev15'
     kapt "androidx.room:room-compiler:2.2.5"
     annotationProcessor "androidx.room:room-compiler:2.2.5"
 

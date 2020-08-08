@@ -1,15 +1,10 @@
 package com.example.sample_material_shop.shop
 
-//import androidx.appcompat.app.AppCompatActivity
-//import android.os.Bundle
-//import com.example.sample_material_shop.R
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.SurfaceView
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.Composable
 import androidx.compose.animation.animate
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -35,7 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
-import com.example.sample_material_shop.R
+
 import com.google.android.filament.*
 import com.google.android.filament.Colors
 import com.google.android.filament.gltfio.AssetLoader

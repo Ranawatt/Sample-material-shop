@@ -1,9 +1,12 @@
 package com.example.sample_material_shop.shop
 
+import androidx.compose.Composable
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.ui.graphics.Color
+
 
 val StoreColors = lightColors(
     primary = Color(0xffdd0d3e),
