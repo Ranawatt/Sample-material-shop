@@ -14,8 +14,8 @@ val StoreColors = lightColors(
     onSurface = Color.White
 )
 
-@androidx.compose.Composable
-fun StoreTheme(content: @androidx.compose.Composable () -> Unit) {
+@Composable
+fun StoreTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colors = StoreColors,
         content = content

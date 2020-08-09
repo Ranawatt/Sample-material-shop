@@ -1,10 +1,8 @@
 package com.example.sample_material_shop.shop
 
-import androidx.compose.Composable
-import androidx.compose.mutableStateOf
-import androidx.compose.remember
 import androidx.compose.runtime.*
 import androidx.ui.tooling.preview.Preview
+
 
 @Preview
 @Composable
