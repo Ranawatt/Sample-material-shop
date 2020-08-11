@@ -1,3 +1,6 @@
+rootProject.name = "sample-materials-shop"
+include(":app")
+
 pluginManagement {
     repositories {
         maven(url = "https://dl.bintray.com/kotlin/kotlin-eap/")
@@ -15,5 +18,4 @@ pluginManagement {
     }
 }
 
-include(":app")
-rootProject.name = "sample-materials-shop"
+

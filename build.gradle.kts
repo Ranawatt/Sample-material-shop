@@ -9,4 +9,5 @@ allprojects {
         jcenter()
         google()
     }
+}
 
