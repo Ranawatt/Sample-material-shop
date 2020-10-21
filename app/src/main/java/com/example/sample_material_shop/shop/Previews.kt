@@ -12,7 +12,8 @@ fun CartItemPreview() {
         var color by remember { mutableStateOf("Fiery Red") }
 
         ShoppingCartItem(
-            Product(17, "Car paint", color, 1_50, AmountUnit.LITER, quantity),
+            Product(17, "Car paint", color, 1_50,
+                AmountUnit.LITER, quantity),
             increase = { quantity++ },
             decrease = { quantity-- },
             updateColor = { color = nextProductColor(color) }

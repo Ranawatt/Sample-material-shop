@@ -51,7 +51,7 @@ android {
 
     defaultConfig {
         applicationId = "com.curiouscreature.compose"
-        minSdkVersion(29)
+        minSdkVersion(28)
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"
