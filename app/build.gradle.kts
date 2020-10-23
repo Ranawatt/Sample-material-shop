@@ -5,20 +5,20 @@ plugins {
     kotlin("kapt")
 }
 
-val composeVersion = "0.1.0-dev16"
+val composeVersion = "1.0.0-alpha05"
 val coroutinesVersion = "1.3.7"
 val roomVersion = "2.2.5"
 val archLifecycleVersion = "2.2.0"
-val filamentVersion = "1.8.0"
+val filamentVersion = "1.9.5"
 
 dependencies {
     implementation(kotlin("stdlib"))
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     api("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 
-    implementation("com.google.android.material:material:1.2.0")
+    implementation("com.google.android.material:material:1.2.1")
 
-    implementation("androidx.core:core-ktx:1.3.1")
+    implementation("androidx.core:core-ktx:1.3.2")
     implementation("androidx.appcompat:appcompat:1.2.0")
 
     implementation("androidx.room:room-runtime:$roomVersion")
