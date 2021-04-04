@@ -5,18 +5,18 @@ plugins {
     kotlin("kapt")
 }
 
-val composeVersion = "1.0.0-alpha05"
+val composeVersion = "1.0.0-beta03"
 val coroutinesVersion = "1.3.7"
-val roomVersion = "2.2.5"
-val archLifecycleVersion = "2.2.0"
-val filamentVersion = "1.9.5"
+val roomVersion = "2.2.6"
+val archLifecycleVersion = "2.3.1"
+val filamentVersion = "1.9.15"
 
 dependencies {
     implementation(kotlin("stdlib"))
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     api("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 
-    implementation("com.google.android.material:material:1.2.1")
+    implementation("com.google.android.material:material:1.3.0")
 
     implementation("androidx.core:core-ktx:1.3.2")
     implementation("androidx.appcompat:appcompat:1.2.0")
@@ -46,13 +46,13 @@ dependencies {
 }
 
 android {
-    compileSdkVersion(29)
-    buildToolsVersion = "29.0.3"
+    compileSdkVersion(30)
+    buildToolsVersion = "30.0.2"
 
     defaultConfig {
         applicationId = "com.curiouscreature.compose"
         minSdkVersion(28)
-        targetSdkVersion(29)
+        targetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
 
@@ -82,7 +82,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerVersion = "1.4.0-rc"
+        kotlinCompilerVersion = "1.4.0"
         kotlinCompilerExtensionVersion = composeVersion
     }
 
@@ -101,4 +101,3 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         freeCompilerArgs = listOf("-Xallow-jvm-ir-dependencies", "-Xskip-prerelease-check", "-Xskip-metadata-version-check")
     }
 }
-
